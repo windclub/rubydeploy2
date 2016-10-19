@@ -1,0 +1,16 @@
+
+
+<form>
+<label>Email: <input type="text" name=""></label>
+
+<label>Password: <input type="text" name=""></label>
+
+<button style="display: block; padding: 5px; margin-top: 5px;">Log in</button>
+</form>
+
+
+<% if flash[:error] %>
+<% flash[:error].each do |ecat| %>
+	<p><%= ecat %></p>
+<% end %>
+<% end %>
